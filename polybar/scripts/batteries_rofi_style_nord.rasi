@@ -1,0 +1,100 @@
+——— begin batteries_rofi_style_nord.rasi ———
+
+/* ──────────────────────────────────────────
+Nord palette
+─────────────────────────────────────────── /
+@define-color nord0   #2E3440;  / dark background /
+@define-color nord1   #3B4252;
+@define-color nord2   #434C5E;
+@define-color nord3   #4C566A;
+@define-color nord4   #D8DEE9;  / light foreground /
+@define-color nord5   #E5E9F0;
+@define-color nord6   #ECEFF4;
+@define-color nord7   #8FBCBB;  / muted cyan /
+@define-color nord8   #88C0D0;  / light blue /
+@define-color nord9   #81A1C1;  / blue /
+@define-color nord10  #5E81AC;  / dark blue */
+
+/* ──────────────────────────────────────────
+Global defaults
+─────────────────────────────────────────── */
+
+{ background: nord1; foreground: nord5; border: 2px; border-color: nord3; border-radius: 4px; separation: 4px; }
+window {
+/* adjust to taste */
+width:           250px;
+location:        north;
+anchor:          north;
+x-offset:        15px;
+y-offset:        55px;
+}
+
+/* hide the input line */
+inputbar {
+hidden:          true;
+}
+
+listview {
+lines:           1;
+fixed-height:    0;
+dynamic-width:   true;
+spacing:         2px;
+margin:          0px;
+}
+
+element {
+padding:         4px 8px;
+border-radius:   3px;
+}
+
+element normal {
+background:      nord1;
+foreground:      nord5;
+}
+
+element selected {
+background:      nord10;
+foreground:      nord0;
+}
+
+element urgent {
+background:      nord9;
+foreground:      nord0;
+}
+
+element active {
+background:      nord8;
+foreground:      nord0;
+}
+
+element disabled {
+background:      nord2;
+foreground:      nord4;
+}
+
+/* optional scrollbar styling */
+scrollbar {
+background:      nord2;
+handle-color:    nord4;
+width:           6px;
+border-radius:   3px;
+}
+
+/* separator between entries, if you use it */
+separator {
+background:      nord3;
+height:          1px;
+}
+
+message {
+foreground:      nord9;
+}
+
+prompt {
+background:      nord8;
+foreground:      nord0;
+padding:         2px 6px;
+border-radius:   3px;
+}
+
+——— end batteries_rofi_style_nord.rasi ———

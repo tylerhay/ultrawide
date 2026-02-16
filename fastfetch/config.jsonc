@@ -1,0 +1,20 @@
+{
+    "logo": {   
+        "source": "Fedora_small"
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "kernel",
+        "shell",
+        "wm",
+        "cpu",
+        "gpu",
+        "memory",
+        "disk",
+        "battery",
+	"separator",
+        "colors"
+    ]
+}
